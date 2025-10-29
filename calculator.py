@@ -13,7 +13,10 @@ class Calculator:
         """Add two numbers"""
         # TODO: Implement addition
         # Hint: result = a + b, then add to history
-        pass
+        result = a + b
+        # record a simple, unformatted history entry
+        self.history.append(f"{a} + {b} = {result}")
+        return result
 
     def subtract(self, a, b):
         """Subtract b from a"""
